@@ -1,0 +1,10 @@
+/* ============================================================
+   MOZHI – Main Stylesheet
+   Import order matters — variables first, then components
+   ============================================================ */
+
+@import url('variables.css');
+@import url('nav.css');
+@import url('hero.css');
+@import url('sections.css');
+@import url('responsive.css');

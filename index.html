@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mozhi Counseling & Therapy Centre — professional, confidential, and compassionate mental health support in Chennai.">
+  <meta name="theme-color" content="#FAFAF7">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="മൊഴി Counseling & Therapy Centre">
+  <meta property="og:description" content="A safe space where healing begins with being heard. Professional therapy in Chennai.">
+  <meta property="og:type" content="website">
+
+  <title>മൊഴി — Counseling & Therapy Centre, Chennai</title>
+
+  <!-- Preconnect fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Scroll-reveal styles (inlined here to avoid FOUC) -->
+  <style>
+    .reveal {
+      opacity: 0;
+      transform: translateY(22px);
+      transition: opacity 0.65s ease, transform 0.65s ease;
+    }
+    .reveal.revealed {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ══════════════════════════════════════
+       NAVIGATION
+  ══════════════════════════════════════ -->
+  <header class="nav" role="banner">
+    <a href="/" class="nav__logo" aria-label="Mozhi home">
+      <img src="assets/images/logo.svg" alt="മൊഴി Counseling & Therapy Centre" width="220" height="44">
+    </a>
+
+    <nav aria-label="Primary navigation">
+      <ul class="nav__links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#approach">Approach</a></li>
+        <li><a href="#contact" class="nav__cta">Book a Session</a></li>
+      </ul>
+    </nav>
+
+    <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <!-- Mobile nav drawer -->
+  <nav class="nav__mobile" aria-label="Mobile navigation">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#approach">Approach</a>
+    <a href="#contact">Contact</a>
+    <a href="#contact" class="nav__cta">Book a Session</a>
+  </nav>
+
+
+  <!-- ══════════════════════════════════════
+       HERO
+  ══════════════════════════════════════ -->
+  <section class="hero" aria-label="Introduction">
+
+    <div class="hero__content">
+      <p class="hero__eyebrow">Chennai &nbsp;·&nbsp; Est. 2026</p>
+
+      <h1 class="hero__title">
+        A space where<br>
+        <em>healing begins</em><br>
+        with being heard
+      </h1>
+
+      <p class="hero__desc">
+        We offer professional, confidential therapy in a warm and
+        non-judgmental environment — because your emotional wellbeing
+        deserves the most thoughtful care.
+      </p>
+
+      <div class="hero__actions">
+        <a href="#contact" class="btn-primary">Schedule a Consultation</a>
+        <a href="#services" class="btn-ghost">
+          <span class="arrow-circle">→</span>
+          Our Services
+        </a>
+      </div>
+    </div>
+
+    <div class="hero__visual" aria-hidden="true">
+      <div class="hero__card">
+        <span class="hero__card-badge">Next available</span>
+        <h3>Initial Consultation</h3>
+        <p>
+          A safe, open conversation to understand your needs and
+          begin your journey towards emotional wellbeing.
+        </p>
+        <div class="hero__availability">
+          <span class="hero__dot"></span>
+          Mon – Sat &nbsp;|&nbsp; 9 AM – 7 PM
+        </div>
+      </div>
+
+      <div class="hero__stat" aria-label="500 plus lives supported">
+        <div class="hero__stat-number">500+</div>
+        <div class="hero__stat-label">Lives supported</div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       ABOUT
+  ══════════════════════════════════════ -->
+  <section class="about" id="about" aria-labelledby="about-heading">
+
+    <div class="about__left">
+      <span class="section-tag">Who we are</span>
+      <h2 class="section-title" id="about-heading">
+        Rooted in compassion,<br>
+        <em>guided by expertise</em>
+      </h2>
+
+      <p class="about__body">
+        At മൊഴി — which means <em>"voice"</em> — we believe that healing begins
+        when you feel truly heard. Our practice is built on the understanding that
+        every person's emotional journey is unique, and deserves a response that
+        honours that individuality.
+      </p>
+      <p class="about__body">
+        Our therapists bring together clinical rigour and genuine warmth, creating
+        a space where you can explore your thoughts, emotions, and experiences
+        without fear of judgement. We walk alongside you — not ahead of you.
+      </p>
+
+      <div class="about__pillars">
+        <!-- Confidential -->
+        <div class="pillar">
+          <div class="pillar__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h4>Confidential</h4>
+          <p>Your privacy is our commitment, always.</p>
+        </div>
+
+        <!-- Flexible -->
+        <div class="pillar">
+          <div class="pillar__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <h4>Flexible</h4>
+          <p>Sessions tailored to your schedule and pace.</p>
+        </div>
+
+        <!-- Empathetic -->
+        <div class="pillar">
+          <div class="pillar__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
+          <h4>Empathetic</h4>
+          <p>Grounded in genuine human understanding.</p>
+        </div>
+
+        <!-- Experienced -->
+        <div class="pillar">
+          <div class="pillar__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h4>Experienced</h4>
+          <p>Qualified professionals across specialisms.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="about__visual">
+      <div class="about__quote">
+        <blockquote>
+          Every voice carries a story worth telling. We are here to listen —
+          with patience, with skill, and with heart.
+        </blockquote>
+        <cite>— The Mozhi Team</cite>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       SERVICES
+  ══════════════════════════════════════ -->
+  <section class="services" id="services" aria-labelledby="services-heading">
+
+    <div class="services__header">
+      <div>
+        <span class="section-tag">What we offer</span>
+        <h2 class="section-title" id="services-heading">
+          Services designed around<br>
+          <em>your</em> needs
+        </h2>
+      </div>
+      <p class="services__intro">
+        We provide a range of therapeutic services for individuals, couples,
+        and families — each designed with clinical care and genuine compassion.
+      </p>
+    </div>
+
+    <div class="services__grid">
+
+      <!-- Featured: Individual Counseling -->
+      <div class="service-card service-card--featured">
+        <div>
+          <p class="service__num">01</p>
+          <span class="service__tag">Most sought</span>
+          <h3>Individual Counseling</h3>
+          <p>
+            One-to-one sessions in a private, safe space — to explore your thoughts,
+            emotions, and experiences with a dedicated therapist who truly listens.
+          </p>
+        </div>
+        <div class="service__deco" aria-hidden="true">❮❯</div>
+      </div>
+
+      <!-- Stress & Anxiety -->
+      <div class="service-card">
+        <p class="service__num">02</p>
+        <span class="service__tag">Highly recommended</span>
+        <h3>Stress & Anxiety Support</h3>
+        <p>
+          Practical, evidence-based strategies to help you manage overwhelm,
+          reduce anxiety, and restore a sense of calm and control to your daily life.
+        </p>
+      </div>
+
+      <!-- Family Therapy -->
+      <div class="service-card">
+        <p class="service__num">03</p>
+        <span class="service__tag">For families</span>
+        <h3>Family Therapy</h3>
+        <p>
+          Guided sessions that help families navigate conflict, rebuild trust,
+          and strengthen the bonds that matter most — together, with professional support.
+        </p>
+      </div>
+
+      <!-- Emotional Wellness -->
+      <div class="service-card service-card--wide">
+        <p class="service__num">04</p>
+        <span class="service__tag">Holistic</span>
+        <h3>Emotional Wellness Guidance</h3>
+        <p>
+          An integrative approach to emotional health — helping you build resilience,
+          develop self-awareness, and cultivate lasting wellbeing in all areas of life.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       APPROACH
+  ══════════════════════════════════════ -->
+  <section class="approach" id="approach" aria-labelledby="approach-heading">
+
+    <div class="approach__intro">
+      <span class="section-tag">How we work</span>
+      <h2 class="section-title" id="approach-heading">
+        Your journey,<br>
+        <em>thoughtfully guided</em>
+      </h2>
+    </div>
+
+    <div class="approach__grid">
+
+      <div class="approach__step">
+        <div class="step__num">01</div>
+        <h3>Reach Out</h3>
+        <p>
+          The first step is simply getting in touch. Whether by phone or WhatsApp,
+          we make beginning as easy and welcoming as possible — no forms, no pressure.
+        </p>
+      </div>
+
+      <div class="approach__step">
+        <div class="step__num">02</div>
+        <h3>Initial Conversation</h3>
+        <p>
+          A gentle, no-pressure consultation to understand what you're experiencing
+          and discuss how we can best support you going forward.
+        </p>
+      </div>
+
+      <div class="approach__step">
+        <div class="step__num">03</div>
+        <h3>Begin Healing</h3>
+        <p>
+          We craft a personalised plan and begin regular sessions at a pace that
+          feels right — always at your comfort, always in your time.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       CONTACT
+  ══════════════════════════════════════ -->
+  <section class="contact" id="contact" aria-labelledby="contact-heading">
+
+    <div class="contact__info">
+      <span class="section-tag">Get in touch</span>
+      <h2 class="section-title" id="contact-heading">
+        Ready to take the<br>
+        <em>first step?</em>
+      </h2>
+      <p class="contact__desc">
+        You don't need to have it all figured out. Simply reach out,
+        and we'll guide the rest with care and professionalism.
+      </p>
+
+      <div class="contact__details">
+
+        <div class="contact__item">
+          <div class="contact__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.69a16 16 0 0 0 6 6l1.87-1.87a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <div>
+            <p class="contact__item-label">Phone &amp; WhatsApp</p>
+            <p class="contact__item-value">
+              <a href="https://wa.me/91XXXXXXXXXX" data-whatsapp aria-label="Contact on WhatsApp">+91 XXXXX XXXXX</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="contact__item">
+          <div class="contact__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <p class="contact__item-label">Location</p>
+            <p class="contact__item-value">Chennai, Tamil Nadu</p>
+          </div>
+        </div>
+
+        <div class="contact__item">
+          <div class="contact__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div>
+            <p class="contact__item-label">Hours</p>
+            <p class="contact__item-value">Monday – Saturday, 9 AM – 7 PM</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Appointment Form -->
+    <div class="contact__form-panel">
+      <h3>Book an appointment</h3>
+      <p>Fill in your details and we'll get back to you within 24 hours.</p>
+
+      <form class="js-appointment-form" novalidate>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="f-name">First Name</label>
+            <input type="text" id="f-name" name="name" placeholder="Your name" autocomplete="given-name">
+          </div>
+          <div class="form-group">
+            <label for="f-phone">Phone Number</label>
+            <input type="tel" id="f-phone" name="phone" placeholder="+91 XXXXX XXXXX" autocomplete="tel">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="f-service">Service of Interest</label>
+          <select id="f-service" name="service">
+            <option value="" disabled selected>Select a service…</option>
+            <option value="Individual Counseling">Individual Counseling</option>
+            <option value="Stress & Anxiety Support">Stress &amp; Anxiety Support</option>
+            <option value="Family Therapy">Family Therapy</option>
+            <option value="Emotional Wellness Guidance">Emotional Wellness Guidance</option>
+            <option value="Not sure yet">Not sure yet</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="f-message">Anything you'd like us to know?</label>
+          <textarea id="f-message" name="message" placeholder="Share as much or as little as you're comfortable with…"></textarea>
+        </div>
+
+        <button type="submit" class="form-submit">Send my Request →</button>
+
+      </form>
+    </div>
+
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+
+    <a href="/" class="footer__logo" aria-label="Mozhi home">
+      <img src="assets/images/logo-white.svg" alt="മൊഴി" width="140" height="32">
+    </a>
+
+    <p class="footer__tagline">"because, every voice matters"</p>
+
+    <p class="footer__copy">&copy; 2026 മൊഴി Counseling &amp; Therapy Centre</p>
+
+  </footer>
+
+
+  <!-- JS -->
+  <script src="assets/js/script.js"></script>
+
+</body>
+</html>

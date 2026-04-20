@@ -1,0 +1,93 @@
+/* ============================================================
+   MOZHI – Responsive
+   ============================================================ */
+
+/* ── Tablet (≤ 1024px) ── */
+@media (max-width: 1024px) {
+  :root {
+    --section-x: 3rem;
+    --section-y: 5rem;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    padding-top: calc(var(--section-y) + 5rem);
+  }
+
+  .hero::before { display: none; }
+
+  .hero__visual {
+    justify-content: flex-start;
+    min-height: 340px;
+  }
+
+  .hero__stat { left: 220px; bottom: 20px; }
+
+  .about {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .services__header {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .approach__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .contact {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+  }
+}
+
+/* ── Mobile (≤ 768px) ── */
+@media (max-width: 768px) {
+  :root {
+    --section-x: 1.5rem;
+    --section-y: 4rem;
+  }
+
+  /* Nav */
+  .nav__links { display: none; }
+  .nav__hamburger { display: flex; }
+  .nav { padding: 0.9rem var(--section-x); }
+
+  /* Hero */
+  .hero { gap: 2.5rem; }
+  .hero__title { font-size: 2.6rem; }
+  .hero__stat { display: none; }
+  .hero__card { width: 100%; max-width: 320px; }
+
+  /* Services */
+  .services__grid { grid-template-columns: 1fr; }
+  .service-card--featured { grid-template-columns: 1fr; }
+  .service__deco { display: none; }
+
+  /* Approach */
+  .approach__grid { grid-template-columns: 1fr; }
+
+  /* About pillars */
+  .about__pillars { grid-template-columns: 1fr; }
+
+  /* Form */
+  .form-row { grid-template-columns: 1fr; }
+
+  /* Footer */
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+}
+
+/* ── Small mobile (≤ 480px) ── */
+@media (max-width: 480px) {
+  .hero__title { font-size: 2.1rem; }
+  .section-title { font-size: 1.9rem; }
+  .hero__actions { flex-direction: column; align-items: flex-start; }
+}
