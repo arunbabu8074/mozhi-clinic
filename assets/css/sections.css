@@ -463,7 +463,8 @@
   font-family: var(--serif);
   font-style: italic;
   font-size: 0.85rem;
-  color: rgba(255,255,255,0.28);
+  /* color: rgba(255,255,255,0.28); */
+  color: rgba(255, 255, 255, 0.863);
 }
 
 .footer__copy {
