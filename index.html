@@ -25,6 +25,7 @@
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/slt.css" />
 
     <!-- Scroll-reveal styles (inlined here to avoid FOUC) -->
     <style>
@@ -100,8 +101,7 @@
 
         <h1 class="hero__title">
           മൊഴി Counseling & Therapy Centre<br />
-          <em>A space where healing begins</em><br />
-          with being heard
+          <em>"because every voice matters"</em><br />
         </h1>
 
         <p class="hero__desc">
@@ -120,7 +120,12 @@
       </div>
 
       <div class="hero__visual" aria-hidden="true">
-        <div class="hero__card">
+        <img
+          src="assets/images/mozhi-poster.jpeg"
+          alt="Mozhi Therapy Banner"
+          class="hero__image"
+        />
+        <!-- <div class="hero__card">
           <span class="hero__card-badge">Next available</span>
           <h3>Initial Consultation</h3>
           <p>
@@ -131,12 +136,12 @@
             <span class="hero__dot"></span>
             Mon - Sat &nbsp;|&nbsp; 9 AM - 7 PM
           </div>
-        </div>
+        </div> -->
 
-        <div class="hero__stat" aria-label="500 plus lives supported">
+        <!-- <div class="hero__stat" aria-label="500 plus lives supported">
           <div class="hero__stat-number">500+</div>
           <div class="hero__stat-label">Lives supported</div>
-        </div>
+        </div> -->
       </div>
     </section>
 
@@ -231,7 +236,7 @@
     <!-- ══════════════════════════════════════
        SERVICES
   ══════════════════════════════════════ -->
-    <section class="services" id="services" aria-labelledby="services-heading">
+    <!-- <section class="services" id="services" aria-labelledby="services-heading">
       <div class="services__header">
         <div>
           <span class="section-tag">What we offer</span>
@@ -248,7 +253,6 @@
       </div>
 
       <div class="services__grid">
-        <!-- Featured: Individual Counseling -->
         <div class="service-card service-card--featured">
           <div>
             <p class="service__num">01</p>
@@ -263,7 +267,6 @@
           <div class="service__deco" aria-hidden="true">❮❯</div>
         </div>
 
-        <!-- Stress & Anxiety -->
         <div class="service-card">
           <p class="service__num">02</p>
           <span class="service__tag">Highly recommended</span>
@@ -275,7 +278,6 @@
           </p>
         </div>
 
-        <!-- Family Therapy -->
         <div class="service-card">
           <p class="service__num">03</p>
           <span class="service__tag">For families</span>
@@ -287,7 +289,6 @@
           </p>
         </div>
 
-        <!-- Emotional Wellness -->
         <div class="service-card service-card--wide">
           <p class="service__num">04</p>
           <span class="service__tag">Holistic</span>
@@ -299,6 +300,837 @@
           </p>
         </div>
       </div>
+    </section> -->
+
+    <section class="slt-section" id="services" aria-labelledby="slt-heading">
+      <!-- Section header -->
+      <div class="slt-header">
+        <div>
+          <span class="slt-eyebrow">Department overview</span>
+          <h2 class="slt-title" id="slt-heading">
+            Speech &amp; Language<br />
+            <em>Therapy Services</em>
+          </h2>
+        </div>
+        <p class="slt-intro">
+          Our SLT department operates as a dual-service hub, addressing
+          communication and swallowing disorders across the entire lifespan —
+          from infants to older adults. Select a service area below to explore
+          how we can help.
+        </p>
+      </div>
+
+      <!-- Tab bar -->
+      <div class="slt-tabs" role="tablist" aria-label="Service areas">
+        <button
+          class="tab-btn tab--paed"
+          role="tab"
+          aria-selected="true"
+          aria-controls="panel-paed"
+          data-panel="paed"
+        >
+          <!-- Child icon -->
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="9" cy="7" r="3" />
+            <path d="M3 21v-2a4 4 0 0 1 4-4h4" />
+            <path d="M19 11l-5 5" />
+            <path d="M14 11h5v5" />
+          </svg>
+          Paediatric services
+        </button>
+
+        <button
+          class="tab-btn"
+          role="tab"
+          aria-selected="false"
+          aria-controls="panel-adult"
+          data-panel="adult"
+        >
+          <!-- Adult icon -->
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+            <circle cx="12" cy="7" r="4" />
+          </svg>
+          Adult services
+        </button>
+
+        <button
+          class="tab-btn"
+          role="tab"
+          aria-selected="false"
+          aria-controls="panel-delivery"
+          data-panel="delivery"
+        >
+          <!-- Grid/delivery icon -->
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="3" y="3" width="7" height="7" rx="1" />
+            <rect x="14" y="3" width="7" height="7" rx="1" />
+            <rect x="3" y="14" width="7" height="7" rx="1" />
+            <rect x="14" y="14" width="7" height="7" rx="1" />
+          </svg>
+          Service delivery
+        </button>
+      </div>
+
+      <!-- ══════════════════════════════
+       PANEL 1 — PAEDIATRIC
+  ══════════════════════════════ -->
+      <div
+        class="slt-panel panel--paed panel--visible"
+        id="panel-paed"
+        role="tabpanel"
+        aria-labelledby="tab-paed"
+      >
+        <p class="panel-intro">
+          Paediatric SLTs focus on developmental milestones and early
+          intervention — helping children acquire skills they haven't yet
+          mastered. Tap any card to see clinical examples.
+        </p>
+
+        <div class="cards-grid">
+          <!-- Speech sound disorders -->
+          <div
+            class="svc-card"
+            tabindex="0"
+            role="button"
+            aria-expanded="false"
+          >
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+                />
+              </svg>
+            </div>
+            <h3 class="card-title">Speech sound disorders</h3>
+            <p class="card-desc">
+              Supporting children who struggle with articulation and
+              phonological patterns.
+            </p>
+            <div class="card-toggle" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+              <span class="toggle-text">See details</span>
+            </div>
+            <div class="card-detail">
+              <div class="detail-inner">
+                <p class="detail-label">Clinical examples</p>
+                <div class="detail-item">
+                  <span class="detail-dot"></span
+                  ><span>"wabbit" instead of "rabbit"</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-dot"></span
+                  ><span>"ibbon" instead of "ribbon"</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-dot"></span
+                  ><span>"pooya" instead of "poocha"</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Language delays -->
+          <div
+            class="svc-card"
+            tabindex="0"
+            role="button"
+            aria-expanded="false"
+          >
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 20h9" />
+                <path
+                  d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"
+                />
+              </svg>
+            </div>
+            <h3 class="card-title">Language delays</h3>
+            <p class="card-desc">
+              Supporting late talkers and children with Developmental Language
+              Disorder (DLD).
+            </p>
+            <div class="card-toggle" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+              <span class="toggle-text">See details</span>
+            </div>
+            <div class="card-detail">
+              <div class="detail-inner">
+                <p class="detail-label">Who we help</p>
+                <div class="detail-item">
+                  <span class="detail-dot"></span
+                  ><span>Late talkers not meeting milestones</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-dot"></span
+                  ><span
+                    >Children with DLD — understanding and using words</span
+                  >
+                </div>
+                <div class="detail-item">
+                  <span class="detail-dot"></span
+                  ><span>Comprehension and expression difficulties</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Fluency -->
+          <div
+            class="svc-card"
+            tabindex="0"
+            role="button"
+            aria-expanded="false"
+          >
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M3 12h3l3-9 3 18 3-9h3" />
+              </svg>
+            </div>
+            <h3 class="card-title">Fluency &amp; stammering</h3>
+            <p class="card-desc">
+              Managing dysfluency in early childhood to build confidence and
+              communication ease.
+            </p>
+            <div class="card-toggle" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+              <span class="toggle-text">See details</span>
+            </div>
+            <div class="card-detail">
+              <div class="detail-inner">
+                <p class="detail-label">Focus areas</p>
+                <div class="detail-item">
+                  <span class="detail-dot"></span
+                  ><span>Early intervention for stammering</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-dot"></span
+                  ><span>Reducing anxiety around speaking</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-dot"></span
+                  ><span>Fluency strategies for everyday situations</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social communication -->
+          <div
+            class="svc-card"
+            tabindex="0"
+            role="button"
+            aria-expanded="false"
+          >
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+            </div>
+            <h3 class="card-title">Social communication</h3>
+            <p class="card-desc">
+              Assisting children on the autism spectrum and those with
+              social-emotional needs.
+            </p>
+            <div class="card-toggle" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+              <span class="toggle-text">See details</span>
+            </div>
+            <div class="card-detail">
+              <div class="detail-inner">
+                <p class="detail-label">Focus areas</p>
+                <div class="detail-item">
+                  <span class="detail-dot"></span
+                  ><span>Navigating peer interactions</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-dot"></span
+                  ><span>Understanding social cues and context</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-dot"></span
+                  ><span>Building friendship and conversation skills</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Feeding & swallowing -->
+          <div
+            class="svc-card"
+            tabindex="0"
+            role="button"
+            aria-expanded="false"
+          >
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M18 8h1a4 4 0 0 1 0 8h-1" />
+                <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z" />
+                <line x1="6" y1="1" x2="6" y2="4" />
+                <line x1="10" y1="1" x2="10" y2="4" />
+                <line x1="14" y1="1" x2="14" y2="4" />
+              </svg>
+            </div>
+            <h3 class="card-title">Feeding &amp; swallowing</h3>
+            <p class="card-desc">
+              Addressing picky eating, sensory difficulties, and dysphagia in
+              young children.
+            </p>
+            <div class="card-toggle" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+              <span class="toggle-text">See details</span>
+            </div>
+            <div class="card-detail">
+              <div class="detail-inner">
+                <p class="detail-label">Focus areas</p>
+                <div class="detail-item">
+                  <span class="detail-dot"></span
+                  ><span>Sensory-related food refusal</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-dot"></span
+                  ><span
+                    >Physiological dysphagia in infants &amp; toddlers</span
+                  >
+                </div>
+                <div class="detail-item">
+                  <span class="detail-dot"></span
+                  ><span>Drooling management after age 2–4</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.cards-grid -->
+
+        <!-- Red-flag alert -->
+        <div
+          class="alert-box"
+          role="note"
+          aria-label="Clinical red flags — when to refer"
+        >
+          <div class="alert-title">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"
+              />
+              <line x1="12" y1="9" x2="12" y2="13" />
+              <line x1="12" y1="17" x2="12.01" y2="17" />
+            </svg>
+            When to refer — paediatric red flags
+          </div>
+          <div class="alert-items">
+            <div class="alert-item">
+              Persistent drooling after 2–4 years old
+            </div>
+            <div class="alert-item">Sudden onset or worsening of drooling</div>
+            <div class="alert-item">
+              Choking, coughing, or gagging while eating or drinking
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /#panel-paed -->
+
+      <!-- ══════════════════════════════
+       PANEL 2 — ADULT
+  ══════════════════════════════ -->
+      <div
+        class="slt-panel panel--adult"
+        id="panel-adult"
+        role="tabpanel"
+        aria-labelledby="tab-adult"
+      >
+        <p class="panel-intro">
+          Adult SLT services are largely rehabilitative — restoring functions
+          lost due to illness, injury, or ageing. Our clinicians work across
+          acute, community, and outpatient settings.
+        </p>
+
+        <div class="cards-grid">
+          <!-- Aphasia -->
+          <div
+            class="svc-card"
+            tabindex="0"
+            role="button"
+            aria-expanded="false"
+          >
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+              </svg>
+            </div>
+            <h3 class="card-title">Aphasia &amp; stroke recovery</h3>
+            <p class="card-desc">
+              Helping adults relearn language following a brain injury or
+              stroke.
+            </p>
+            <div class="card-toggle" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+              <span class="toggle-text">See details</span>
+            </div>
+            <div class="card-detail">
+              <div class="detail-inner">
+                <p class="detail-label">What we address</p>
+                <div class="detail-item">
+                  <span class="detail-dot"></span
+                  ><span>Word finding and naming difficulties</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-dot"></span
+                  ><span>Reading and writing rehabilitation</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-dot"></span
+                  ><span>Conversation partner training</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dysarthria -->
+          <div
+            class="svc-card"
+            tabindex="0"
+            role="button"
+            aria-expanded="false"
+          >
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" />
+                <path
+                  d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"
+                />
+              </svg>
+            </div>
+            <h3 class="card-title">Dysarthria</h3>
+            <p class="card-desc">
+              Managing speech muscle weakness from neurological conditions like
+              Parkinson's disease or MS.
+            </p>
+            <div class="card-toggle" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+              <span class="toggle-text">See details</span>
+            </div>
+            <div class="card-detail">
+              <div class="detail-inner">
+                <p class="detail-label">Conditions we support</p>
+                <div class="detail-item">
+                  <span class="detail-dot"></span
+                  ><span
+                    >Parkinson's disease — Lee Silverman Voice Treatment</span
+                  >
+                </div>
+                <div class="detail-item">
+                  <span class="detail-dot"></span
+                  ><span>Multiple sclerosis</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-dot"></span
+                  ><span>Motor neurone disease</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cognitive-communication -->
+          <div
+            class="svc-card"
+            tabindex="0"
+            role="button"
+            aria-expanded="false"
+          >
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"
+                />
+              </svg>
+            </div>
+            <h3 class="card-title">Cognitive-communication</h3>
+            <p class="card-desc">
+              Supporting memory, sequencing, and problem-solving after TBI or
+              dementia.
+            </p>
+            <div class="card-toggle" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+              <span class="toggle-text">See details</span>
+            </div>
+            <div class="card-detail">
+              <div class="detail-inner">
+                <p class="detail-label">Focus areas</p>
+                <div class="detail-item">
+                  <span class="detail-dot"></span
+                  ><span>Traumatic brain injury (TBI) rehabilitation</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-dot"></span
+                  ><span>Dementia communication strategies</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-dot"></span
+                  ><span>Attention, sequencing, and planning</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Voice disorders -->
+          <div
+            class="svc-card"
+            tabindex="0"
+            role="button"
+            aria-expanded="false"
+          >
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"
+                />
+                <path d="M19 10v2a7 7 0 0 1-14 0v-2" />
+                <line x1="12" y1="19" x2="12" y2="23" />
+                <line x1="8" y1="23" x2="16" y2="23" />
+              </svg>
+            </div>
+            <h3 class="card-title">Voice disorders</h3>
+            <p class="card-desc">
+              Treating vocal pathologies — nodules, polyps, nerve damage, and
+              muscle tension dysphonia.
+            </p>
+            <div class="card-toggle" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+              <span class="toggle-text">See details</span>
+            </div>
+            <div class="card-detail">
+              <div class="detail-inner">
+                <p class="detail-label">Who we see</p>
+                <div class="detail-item">
+                  <span class="detail-dot"></span
+                  ><span>Teachers, singers, and professional voice users</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-dot"></span
+                  ><span>Vocal fold nodules, polyps, and nerve weakness</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-dot"></span
+                  ><span>Sudden or unexplained voice loss</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dysphagia -->
+          <div
+            class="svc-card"
+            tabindex="0"
+            role="button"
+            aria-expanded="false"
+          >
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M18 8h1a4 4 0 0 1 0 8h-1" />
+                <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z" />
+                <line x1="6" y1="1" x2="6" y2="4" />
+                <line x1="10" y1="1" x2="10" y2="4" />
+                <line x1="14" y1="1" x2="14" y2="4" />
+              </svg>
+            </div>
+            <h3 class="card-title">Dysphagia management</h3>
+            <p class="card-desc">
+              Critical swallowing assessment to prevent choking, aspiration, and
+              aspiration pneumonia.
+            </p>
+            <div class="card-toggle" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+              <span class="toggle-text">See details</span>
+            </div>
+            <div class="card-detail">
+              <div class="detail-inner">
+                <p class="detail-label">What's involved</p>
+                <div class="detail-item">
+                  <span class="detail-dot"></span
+                  ><span>Bedside and instrumental swallowing assessments</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-dot"></span
+                  ><span>Modified texture and fluid recommendations</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-dot"></span
+                  ><span>Caregiver and nursing staff training</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.cards-grid -->
+      </div>
+      <!-- /#panel-adult -->
+
+      <!-- ══════════════════════════════
+       PANEL 3 — SERVICE DELIVERY
+  ══════════════════════════════ -->
+      <div
+        class="slt-panel panel--delivery"
+        id="panel-delivery"
+        role="tabpanel"
+        aria-labelledby="tab-delivery"
+      >
+        <p class="panel-intro">
+          Our department offers a flexible mix of delivery models to ensure
+          every patient can access the right level of support, regardless of
+          location or mobility.
+        </p>
+
+        <div class="cards-grid">
+          <!-- Assessment -->
+          <div
+            class="svc-card"
+            tabindex="0"
+            role="button"
+            aria-expanded="false"
+          >
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <polyline points="9 11 12 14 22 4" />
+                <path
+                  d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"
+                />
+              </svg>
+            </div>
+            <h3 class="card-title">Assessment</h3>
+            <p class="card-desc">
+              Comprehensive testing using standardised tools to establish a
+              clinical baseline.
+            </p>
+            <div class="card-toggle" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+              <span class="toggle-text">See details</span>
+            </div>
+            <div class="card-detail">
+              <div class="detail-inner">
+                <p class="detail-label">Includes</p>
+                <div class="detail-item">
+                  <span class="detail-dot"></span
+                  ><span>Standardised assessment batteries</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-dot"></span
+                  ><span>Observation and clinical interview</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-dot"></span
+                  ><span>Goal setting and care planning</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Individual therapy -->
+          <div
+            class="svc-card"
+            tabindex="0"
+            role="button"
+            aria-expanded="false"
+          >
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                <circle cx="12" cy="7" r="4" />
+              </svg>
+            </div>
+            <h3 class="card-title">Individual therapy</h3>
+            <p class="card-desc">
+              One-on-one sessions tailored to the patient's specific functional
+              goals.
+            </p>
+            <div class="card-toggle" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+              <span class="toggle-text">See details</span>
+            </div>
+            <div class="card-detail">
+              <div class="detail-inner">
+                <p class="detail-label">Format</p>
+                <div class="detail-item">
+                  <span class="detail-dot"></span
+                  ><span>Personalised treatment plans</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-dot"></span
+                  ><span>Measurable outcome tracking</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-dot"></span
+                  ><span>Regular progress reviews</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Group therapy -->
+          <div
+            class="svc-card"
+            tabindex="0"
+            role="button"
+            aria-expanded="false"
+          >
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+            </div>
+            <h3 class="card-title">Group therapy</h3>
+            <p class="card-desc">
+              Practising skills in a naturalistic setting — ideal for social
+              communication and stroke groups.
+            </p>
+            <div class="card-toggle" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+              <span class="toggle-text">See details</span>
+            </div>
+            <div class="card-detail">
+              <div class="detail-inner">
+                <p class="detail-label">Example groups</p>
+                <div class="detail-item">
+                  <span class="detail-dot"></span
+                  ><span>Aphasia conversation groups</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-dot"></span
+                  ><span>Social skills groups for children</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-dot"></span
+                  ><span>Stammering peer support groups</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Telehealth -->
+          <div
+            class="svc-card"
+            tabindex="0"
+            role="button"
+            aria-expanded="false"
+          >
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <rect x="2" y="3" width="20" height="14" rx="2" />
+                <line x1="8" y1="21" x2="16" y2="21" />
+                <line x1="12" y1="17" x2="12" y2="21" />
+              </svg>
+            </div>
+            <h3 class="card-title">Telehealth</h3>
+            <p class="card-desc">
+              Remote sessions — a standard option for those with mobility issues
+              or in rural areas.
+            </p>
+            <div class="card-toggle" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+              <span class="toggle-text">See details</span>
+            </div>
+            <div class="card-detail">
+              <div class="detail-inner">
+                <p class="detail-label">Benefits</p>
+                <div class="detail-item">
+                  <span class="detail-dot"></span
+                  ><span>Access from home — no travel needed</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-dot"></span
+                  ><span>Same clinical quality as in-person sessions</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-dot"></span
+                  ><span>Ideal for rural and mobility-limited patients</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Consultation -->
+          <div
+            class="svc-card"
+            tabindex="0"
+            role="button"
+            aria-expanded="false"
+          >
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+                />
+              </svg>
+            </div>
+            <h3 class="card-title">Consultation</h3>
+            <p class="card-desc">
+              Training parents, caregivers, and nursing staff to embed
+              communication strategies in daily life.
+            </p>
+            <div class="card-toggle" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+              <span class="toggle-text">See details</span>
+            </div>
+            <div class="card-detail">
+              <div class="detail-inner">
+                <p class="detail-label">Who we train</p>
+                <div class="detail-item">
+                  <span class="detail-dot"></span
+                  ><span>Parents and family members</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-dot"></span
+                  ><span>Teaching assistants and school staff</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-dot"></span
+                  ><span>Nursing and ward care teams</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.cards-grid -->
+      </div>
+      <!-- /#panel-delivery -->
     </section>
 
     <!-- ══════════════════════════════════════
@@ -372,11 +1204,31 @@
               <p class="contact__item-label">Phone &amp; WhatsApp</p>
               <p class="contact__item-value">
                 <a
-                  href="https://wa.me/91XXXXXXXXXX"
+                  href="https://wa.me/918606213709"
                   data-whatsapp
                   aria-label="Contact on WhatsApp"
-                  >+91 XXXXX XXXXX</a
+                  >+91 86062 13709</a
                 >
+              </p>
+            </div>
+          </div>
+
+          <div class="contact__item">
+            <div class="contact__icon" aria-hidden="true">
+              <!-- Mail icon -->
+              <svg viewBox="0 0 24 24">
+                <path d="M4 4h16v16H4z" fill="none" />
+                <path d="M4 4l8 7 8-7" />
+                <rect x="4" y="4" width="16" height="16" rx="2" ry="2" />
+              </svg>
+            </div>
+
+            <div>
+              <p class="contact__item-label">Email</p>
+              <p class="contact__item-value">
+                <a href="mailto:connectmozhimdkm@gmail.com">
+                  connectmozhimdkm@gmail.com
+                </a>
               </p>
             </div>
           </div>
@@ -488,7 +1340,7 @@
         />
       </a>
 
-      <p class="footer__tagline">"because, every voice matters"</p>
+      <p class="footer__tagline">"Because, every voice matters"</p>
 
       <p class="footer__copy">
         &copy; 2026 മൊഴി Counseling &amp; Therapy Centre
@@ -497,5 +1349,6 @@
 
     <!-- JS -->
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/slt.js"></script>
   </body>
 </html>

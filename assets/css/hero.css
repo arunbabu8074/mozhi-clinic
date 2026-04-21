@@ -92,6 +92,12 @@
   min-height: 480px;
 }
 
+.hero__image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
 /* Floating card */
 .hero__card {
   background: #fff;
